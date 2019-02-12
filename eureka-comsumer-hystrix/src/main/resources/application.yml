@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-consumer-hystrix
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka/ # 指定 Eureka 注册中心的地址
+server:
+  port: 10021
+feign:
+  hystrix:
+    enabled: true
