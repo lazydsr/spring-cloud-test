@@ -9,7 +9,13 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 public class EurekaServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaServerApplication.class, args);
+        long l = System.currentTimeMillis();
+        System.out.println(l);
+        long l1 = l / 1000;
+        System.out.println(l1);
+        long l2 = l % 1000;
+        System.out.println(l2);
+        //SpringApplication.run(EurekaServerApplication.class, args);
     }
 
 }
